@@ -3,15 +3,15 @@ const d = document;
 let imgN1 = [
   {
     nombre: "charlie",
-    url: "imagenes/charlie.jpg",
+    url: "imagenes/charlie.png",
   },
   {
     nombre: "nick",
-    url: "imagenes/descarga.jpg",
+    url: "imagenes/descarga.png",
   },
   {
     nombre: "darcy",
-    url: "imagenes/Darcy.webp",
+    url: "imagenes/Darcy.png",
   },
   {
     nombre: "tara",
@@ -19,23 +19,23 @@ let imgN1 = [
   },
   {
     nombre: "tao",
-    url: "imagenes/tao.webp",
+    url: "imagenes/tao.png",
   },
   {
     nombre: "elle",
-    url: "imagenes/Elle.webp",
+    url: "imagenes/Elle.png",
   },
   {
     nombre: "charlie",
-    url: "imagenes/charlie.jpg",
+    url: "imagenes/charlie.png",
   },
   {
     nombre: "nick",
-    url: "imagenes/descarga.jpg",
+    url: "imagenes/descarga.png",
   },
   {
     nombre: "darcy",
-    url: "imagenes/Darcy.webp",
+    url: "imagenes/Darcy.png",
   },
   {
     nombre: "tara",
@@ -43,25 +43,25 @@ let imgN1 = [
   },
   {
     nombre: "tao",
-    url: "imagenes/tao.webp",
+    url: "imagenes/tao.png",
   },
   {
     nombre: "elle",
-    url: "imagenes/Elle.webp",
+    url: "imagenes/Elle.png",
   },
 ];
 let imgN2 = [
   {
     nombre: "charlie",
-    url: "imagenes/charlie.jpg",
+    url: "imagenes/charlie.png",
   },
   {
     nombre: "nick",
-    url: "imagenes/descarga.jpg",
+    url: "imagenes/descarga.png",
   },
   {
     nombre: "darcy",
-    url: "imagenes/Darcy.webp",
+    url: "imagenes/Darcy.png",
   },
   {
     nombre: "tara",
@@ -69,23 +69,23 @@ let imgN2 = [
   },
   {
     nombre: "tao",
-    url: "imagenes/tao.webp",
+    url: "imagenes/tao.png",
   },
   {
     nombre: "elle",
-    url: "imagenes/Elle.webp",
+    url: "imagenes/Elle.png",
   },
   {
     nombre: "charlie",
-    url: "imagenes/charlie.jpg",
+    url: "imagenes/charlie.png",
   },
   {
     nombre: "nick",
-    url: "imagenes/descarga.jpg",
+    url: "imagenes/descarga.png",
   },
   {
     nombre: "darcy",
-    url: "imagenes/Darcy.webp",
+    url: "imagenes/Darcy.png",
   },
   {
     nombre: "tara",
@@ -93,11 +93,11 @@ let imgN2 = [
   },
   {
     nombre: "tao",
-    url: "imagenes/tao.webp",
+    url: "imagenes/tao.png",
   },
   {
     nombre: "elle",
-    url: "imagenes/Elle.webp",
+    url: "imagenes/Elle.png",
   },
   {
     nombre: "michael",
@@ -109,25 +109,25 @@ let imgN2 = [
   },
   {
     nombre: "tori",
-    url: "imagenes/tori.jpg",
+    url: "imagenes/tori.png",
   },
   {
     nombre: "tori",
-    url: "imagenes/tori.jpg",
+    url: "imagenes/tori.png",
   },
 ];
 let imgN3 = [
   {
     nombre: "charlie",
-    url: "imagenes/charlie.jpg",
+    url: "imagenes/charlie.png",
   },
   {
     nombre: "nick",
-    url: "imagenes/descarga.jpg",
+    url: "imagenes/descarga.png",
   },
   {
     nombre: "darcy",
-    url: "imagenes/Darcy.webp",
+    url: "imagenes/Darcy.png",
   },
   {
     nombre: "tara",
@@ -135,23 +135,23 @@ let imgN3 = [
   },
   {
     nombre: "tao",
-    url: "imagenes/tao.webp",
+    url: "imagenes/tao.png",
   },
   {
     nombre: "elle",
-    url: "imagenes/Elle.webp",
+    url: "imagenes/Elle.png",
   },
   {
     nombre: "charlie",
-    url: "imagenes/charlie.jpg",
+    url: "imagenes/charlie.png",
   },
   {
     nombre: "nick",
-    url: "imagenes/descarga.jpg",
+    url: "imagenes/descarga.png",
   },
   {
     nombre: "darcy",
-    url: "imagenes/Darcy.webp",
+    url: "imagenes/Darcy.png",
   },
   {
     nombre: "tara",
@@ -159,11 +159,11 @@ let imgN3 = [
   },
   {
     nombre: "tao",
-    url: "imagenes/tao.webp",
+    url: "imagenes/tao.png",
   },
   {
     nombre: "elle",
-    url: "imagenes/Elle.webp",
+    url: "imagenes/Elle.png",
   },
   {
     nombre: "michael",
@@ -175,27 +175,27 @@ let imgN3 = [
   },
   {
     nombre: "tori",
-    url: "imagenes/tori.jpg",
+    url: "imagenes/tori.png",
   },
   {
     nombre: "tori",
-    url: "imagenes/tori.jpg",
+    url: "imagenes/tori.png",
   },
   {
     nombre: "aled",
-    url: "imagenes/Aled.jpg",
+    url: "imagenes/Aled.png",
   },
   {
     nombre: "aled",
-    url: "imagenes/Aled.jpg",
+    url: "imagenes/Aled.png",
   },
   {
     nombre: "alice",
-    url: "imagenes/Alice.jpg",
+    url: "imagenes/Alice.png",
   },
   {
     nombre: "alice",
-    url: "imagenes/Alice.jpg",
+    url: "imagenes/Alice.png",
   },
 ];
 let fondoBody = d.querySelector("body");
@@ -220,7 +220,10 @@ let tiempoTranscurrido;
 let imagenNivel;
 let estoyJugando = false;
 let sonidoGanaste = new Audio("./sonidos/correcto.mp3");
+let sonidoSeleccionar = new Audio("./sonidos/seleccionar.mpeg");
+let sonidoAdivinaste = new Audio("./sonidos/adivinaste.mpeg");
 let sonidoPerdiste = new Audio("./sonidos/incorrecto.mp3");
+
 
 //agregar evento al boton para iniciar el juego
 function limpiarTablero() {
@@ -228,7 +231,7 @@ function limpiarTablero() {
 }
 
 d.addEventListener("DOMContentLoaded", () => {
-  fondoBody.classList.add("fondo1")
+  fondoBody.classList.add("fondo1");
   mostrarDatos();
 });
 
@@ -277,6 +280,7 @@ function mostrarImg() {
   // Verificar si la imagen ya ha sido acertada
   if (this.src.includes("correcto.png")) {
     alert("Ya seleccionaste esta imagen correctamente. Elige otra.");
+  
     return;
   }
   // Verificar si se ha elegido la misma imagen
@@ -299,8 +303,10 @@ function mostrarImg() {
 //funcion para comparar imagenes
 function compararImg() {
   let imgTablero = d.querySelectorAll(".tablero  div  img");
+  sonidoSeleccionar.play()
   if (imagenNombre[0] == imagenNombre[1]) {
     // alert("¡Felicitaciones adivinaste una imagen!");
+    sonidoGanaste.play();
     imgTablero[imagenID[0]].src = "imagenes/correcto.png";
     imgTablero[imagenID[1]].src = "imagenes/correcto.png";
     aciertos++;
@@ -336,6 +342,7 @@ function compararImg() {
     estoyJugando = false;
   } else if (nivel == 2 && aciertos == 8) {
     alert("🎉🎖️¡Felicitaciones pasaste al siguiente nivel!🎖️🎉");
+    fondoBody.classList.add("fondo1", "fondo3");
     sonidoGanaste.play();
     clearInterval(tiempoTranscurrido);
     nivel++;

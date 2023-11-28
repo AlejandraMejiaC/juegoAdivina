@@ -48,11 +48,11 @@ function mostrarDatos(){
     jugadores.forEach((jugador, i) => {
         let fila = d.createElement("tr")
         fila.innerHTML = `
-         <td> ${i+1} </td>
-         <td> ${jugador.nombre} </td>
-         <td> ${jugador.tiempoTotal} </td>
-         <td> ${jugador.intentos} </td>
-         <td> ${jugador.tiempoSobrante} </td>
+         <td><h5>${i+1}</h5></td>
+         <td><h5>${jugador.nombre}</h5></td>
+         <td><h5>${jugador.tiempoTotal}</h5></td>
+         <td><h5>${jugador.intentos}</h5></td>
+         <td><h5>${jugador.tiempoSobrante}</h5></td>
         `
         tabla.appendChild(fila)
     });

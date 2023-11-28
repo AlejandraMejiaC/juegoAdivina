@@ -18,18 +18,16 @@
 .text{
     color: #337667;
 }
-.fondo1{
-    background-image: url("imagenes/fondo1.jpg");
+.fondo1 {
+    background: url('./imagenes/fondo1.jpg') no-repeat center center fixed;
     background-size: cover;
-}
-.fondo2{
-    background-image: url("imagenes/fondo2.webp");
+  }
+  
+  .fondo3 {
+    background: url('./imagenes/fondo3.jpg') no-repeat center center fixed;
     background-size: cover;
-}
-.fondo3{
-    background-image: url("imagenes/fondo3.jpg");
-    background-size: cover;
-}
+  }
+  
 .table>:not(caption)>*>*{
     background: rgba(255, 255, 255, 0.485)  !important;
     color:  #3a8d7b;
